@@ -1,0 +1,10 @@
+from pydantic import BaseModel
+
+class Course(BaseModel):
+    id: int
+    name: str
+    code: str
+
+class CourseCreate(BaseModel):
+    name: str
+    code: str
